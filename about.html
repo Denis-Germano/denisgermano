@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Denis Germano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Denis Germano - CyberSecurity</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="articles.html">Artigos</a></li>
+                <li>
+                    <a href="#writeups" onmouseover="showDropdown()" onmouseout="hideDropdown()">Writeups de CTF</a>
+                    <ul class="dropdown" id="writeup-dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                        <li><a href="writeups/htb.html">Hackthebox</a></li>
+                        <li><a href="writeups/thm.html">TryHackMe</a></li>
+                        <li><a href="writeups/vulnhub.html">VulnHub</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <h2 class="section-title">Sobre Mim</h2>
+    <div class="about-container">
+        <img src="img/profile.jpg" alt="Denis Germano" class="profile-picture">
+        <div class="about-text">
+            <p>🤖Faaaala pessoal, blz ? Eu sou o Denis, especialista em cibersegurança com um histórico sólido em tecnologia em setor público e privado. Com um compromisso contínuo com a inovação e excelência.</p>
+            <br>
+            <p><strong>💻 Carreira e Experiência:</strong> Minha carreira começou no Exército Brasileiro, onde servi de 2013 a 2022 como Sargento de Comunicações aprovado em concurso público. Durante esse período, atuei em diversas localidades como Rio de Janeiro, São Paulo, Minas Gerais e Brasília.<br> No Exército, desempenhei funções de liderança no corpo de tropa e nas seções de comunicações e informática, cuidando de sistemas open source, redes e segurança da organização militar.<br> Além disso, fui instrutor no curso de Guerra Cibernética, transmitindo conhecimentos cruciais para Oficiais e Sargentos das Forças Armadas.
+            <br>No ano de 2022, decidi abandonar a carreira militar e viver integralmente de cybersegurança. Hoje atuo no setor bancário como analista sênior de Red Team, contribuindo para a segurança de instituições financeiras com minha experiência em testes de penetração e defesa.</p>
+            <br>
+            <p><strong>🏆 Certificações:</strong></p>
+            <ul class="certification-list">
+                <li>OSCP: Offensive Security Certified Professional</li>
+                <li>DCPT: Desec Certified Penetration Tester.</li>
+                <li>EWPTx: Web application Penetration Tester eXtreme</li>
+                <li>CWHI: Crowsec Web Hacking Initial</li>
+                <li>OSWE (em andamento): Offensive Security Web Expert</li>
+            </ul>
+            <br>
+            <p><strong>Conquistas e Compromisso:</strong></p>
+            <ul class="achievements-list">
+                <li><strong>🏅 Capture The Flag (CTF):</strong> Entusiasta de CTF participei de algumas competições, incluindo o CTF do curso de Guerra Cibernética onde fiquei em primeiro lugar e o CTF da FEBRABAN, onde consegui o segundo e terceiro lugar.</li>
+                <li><strong>🌱 Aprendizado Contínuo:</strong> Sempre em busca de novos conhecimentos e aperfeiçoamento profissional. Acredito na importância de uma comunidade colaborativa e aberta, onde o compartilhamento de conhecimento e a ajuda mútua são essenciais para o crescimento coletivo.</li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank"><img src="img/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://github.com/seu-perfil" target="_blank"><img src="img/github-icon.png" alt="GitHub"></a>
+                <a href="https://youtube.com/seu-perfil" target="_blank"><img src="img/youtube-icon.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+    <footer>
+        © 2024 Denis Germano. Todos os direitos reservados.
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

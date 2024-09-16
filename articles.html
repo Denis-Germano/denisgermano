@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos - Denis Germano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Denis Germano - CyberSecurity</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li>
+                    <a href="#writeups" onmouseover="showDropdown()" onmouseout="hideDropdown()">Writeups de CTF</a>
+                    <ul class="dropdown" id="writeup-dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                        <li><a href="writeups/htb.html">Hackthebox</a></li>
+                        <li><a href="writeups/thm.html">TryHackMe</a></li>
+                        <li><a href="writeups/vulnhub.html">VulnHub</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Artigos</h2>
+        <div class="article-grid">
+            <div class="article-item">
+                <a href="#">
+                    <img src="img/article1.jpg" alt="Artigo 1" class="article-cover">
+                    <h3>Em breve</h3>
+                    <p></p>
+                </a>
+            </div>
+            
+    </main>
+
+    <footer>
+        © 2024 Denis Germano. Todos os direitos reservados.
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

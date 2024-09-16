@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #161b22;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #58a6ff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #c9d1d9;
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: #1f6feb;
+    color: #ffffff;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #282c34;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown a {
+    padding: 10px 20px;
+    color: #c9d1d9;
+    white-space: nowrap;
+}
+
+.dropdown a:hover {
+    background-color: #1f6feb;
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+}
+
+.section-title {
+    font-size: 2em;
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+
+.content {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #161b22;
+    padding: 20px;
+    text-align: center;
+    color: #8b949e;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: 1px solid #30363d;
+    background-color: #161b22;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab:hover, .active {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-content {
+    display: block;
+}
+
+/* Estilos para write-ups e artigos */
+.writeup-grid, .article-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.writeup-item, .article-item {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.writeup-item:hover, .article-item:hover {
+    transform: scale(1.05);
+}
+
+.writeup-cover, .article-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.writeup-item h3, .article-item h3 {
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+.writeup-item p, .article-item p {
+    color: #8b949e;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-picture {
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Estilos da seção de boas-vindas */
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #161b22;
+    color: #c9d1d9;
+    text-align: center;
+}
+
+.welcome-content {
+    max-width: 900px;
+}
+
+.welcome-content h1 {
+    font-size: 36px;
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+
+.welcome-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.welcome-image-container {
+    margin-top: 30px;
+}
+
+.welcome-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Ocultar o conteúdo das outras abas inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Mantém o layout flexível com espaçamento entre as caixas */
+.writeup-grid, .article-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Ajuste o espaçamento entre as caixas */
+    justify-content: space-between; /* Garante que os itens fiquem distribuídos */
+}
+
+/* Ajuste o tamanho das caixas para ficarem lado a lado */
+.writeup-item, .article-item {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 20px;
+    width: calc(33.333% - 20px); /* Três caixas por linha com espaçamento */
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho das caixas */
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 20px; /* Espaçamento vertical entre as linhas */
+}
+
+.writeup-item:hover, .article-item:hover {
+    transform: scale(1.05);
+}
+
+/* Ajusta o estilo das imagens dentro das caixas */
+.writeup-cover, .article-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilização do título e parágrafos dentro das caixas */
+.writeup-item h3, .article-item h3 {
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+.writeup-item p, .article-item p {
+    color: #8b949e;
+}
+
+/* Paginação estilizada */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-controls button {
+    background-color: #1f6feb;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.pagination-controls button:hover {
+    background-color: #58a6ff;
+}
+
+.pagination-controls span {
+    font-size: 16px;
+    color: #c9d1d9;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Responsividade: Ajuste o layout em telas menores */
+@media (max-width: 768px) {
+    .writeup-item, .article-item {
+        width: calc(50% - 20px); /* Duas caixas por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .writeup-item, .article-item {
+        width: 100%; /* Uma caixa por linha em telas bem pequenas */
+    }
+}
+/* Seção do YouTube */
+#youtube-preview {
+    background-color: #161b22; /* Fundo semelhante ao da seção Welcome */
+    padding: 50px 20px;
+    color: #c9d1d9;
+    text-align: center;
+}
+
+.youtube-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.youtube-logo {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 50%; /* Torna a imagem mais oval */
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.youtube-logo:hover {
+    transform: scale(1.1);
+}
+
+.youtube-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #8b949e;
+}
+
+@media (max-width: 768px) {
+    .youtube-logo {
+        width: 100px; /* Reduz o tamanho em dispositivos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .youtube-logo {
+        width: 80px; /* Ainda menor em dispositivos ainda menores */
+    }
+}
+
+/* Estilizando a seção "Sobre Mim" para um visual mais profissional */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    margin: 20px 0;
+}
+
+
+
+.about-text {
+    max-width: 600px; /* Limita a largura do texto */
+    line-height: 1.6; /* Melhor leitura */
+}
+
+.certification-list, .achievements-list {
+    list-style-type: disc; /* Marcadores para listas */
+    margin-left: 20px; /* Espaçamento da lista em relação ao texto */
+}
+
+.certification-list li, .achievements-list li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones sociais */
+    margin-top: 20px;
+}
+
+.social-icons a img {
+    width: 30px; /* Tamanho dos ícones sociais */
+    vertical-align: middle;
+}
+.about-text {
+    max-width: 600px; /* Limita a largura do texto */
+    line-height: 1.6; /* Melhor leitura */
+    text-align: justify; /* Justifica o texto */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do bloco de texto */
+}
+
+/* Adiciona um ajuste extra ao último parágrafo para evitar justificação irregular */
+.about-text p:last-child {
+    text-align: left; /* Alinha o último parágrafo à esquerda para evitar problemas de justificação irregular */
+}

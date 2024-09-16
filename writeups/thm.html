@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writeups TryHackMe - Denis Germano</title>
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Denis Germano - CyberSecurity</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../articles.html">Artigos</a></li>
+                <li><a href="../about.html">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">TryHackMe Writeups</h2>
+        
+        <!-- Opções de Paginação -->
+        <div class="pagination-options">
+            <label for="writeups-per-page">Writeups por página:</label>
+            <select id="writeups-per-page" onchange="updatePagination()">
+                <option value="6">6</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+            </select>
+        </div>
+
+                <!-- Grid de Writeups -->
+        <section class="writeup-grid">
+            <!-- Esses blocos seriam gerados dinamicamente com JavaScript -->
+            <div class="writeup-item">
+                <a href="htb-writeup1.html">
+                    <img src="#" alt="THM Writeup 1" class="writeup-cover">
+                    <h3>Em breve</h3>
+                    <p>.</p>
+                </a>
+            </div>
+            
+            
+        </section>
+
+
+        <!-- Paginação -->
+        <div class="pagination-controls">
+            <button onclick="prevPage()">Anterior</button>
+            <span id="current-page">Página 1</span>
+            <button onclick="nextPage()">Próxima</button>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 Denis Germano. Todos os direitos reservados.
+    </footer>
+
+    <script src="../js/pagination.js"></script>
+</body>
+</html>

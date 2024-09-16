@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Germano - CyberSecurity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Denis Germano - CyberSecurity</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#writeups" onmouseover="showDropdown()" onmouseout="hideDropdown()">Writeups de CTF</a>
+                    <ul class="dropdown" id="writeup-dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                        <li><a href="writeups/htb.html">Hackthebox</a></li>
+                        <li><a href="writeups/thm.html">TryHackMe</a></li>
+                        <li><a href="writeups/vulnhub.html">VulnHub</a></li>
+                    </ul>
+                </li>
+                <li><a href="articles.html">Artigos</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="welcome-section" class="welcome-section">
+        <div class="welcome-content">
+            <h1>Bem-vindos</h1>
+            <p>🌐🚀 Olá, hacker! Prepare-se para mergulhar de cabeça no fascinante universo da cibersegurança! Aqui, você encontrará o que precisa saber sobre as melhores práticas e desafios nessa jornada.</p>
+            <p>🛡️ Explore nossos Write-ups de CTFs: Desvende os segredos dos desafios de Capture The Flag com nossos artigos detalhados e dicas valiosas. Quer você seja um novato ou um veterano, sempre há algo novo para aprender!</p>
+            <!-- <p>📝 Aprofunde-se em nossos Artigos: Conhecimento é poder! Navegue por artigos perspicazes que vão desde análises técnicas até reflexões sobre o futuro da segurança digital.</p> -->
+            <div class="welcome-image-container">
+                
+            </div>
+        </div>
+    </section>
+    <br>
+        <!-- Seção do YouTube -->
+    <section id="youtube-preview" class="welcome-section">
+        <div class="welcome-content">
+            <h2 class="section-title">Habemus Shell no YouTube</h2>
+            <div class="youtube-container">
+                <a href="https://www.youtube.com/@HabemusShell" target="_blank">
+                    <img src="img/youtube-logo.png" alt="Canal no YouTube" class="youtube-logo">
+                </a>
+                <p>🎥 Não se esqueça do nosso Canal no YouTube!: Acompanhe o <strong><a href="https://www.youtube.com/@HabemusShell" target="_blank">Habemus Shell</strong></a> para tutoriais, discussões e muito mais conteúdo em vídeo. Não perca as últimas atualizações e fique por dentro das novidades em cibersegurança!</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        © 2024 Denis Germano. Todos os direitos reservados.
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
